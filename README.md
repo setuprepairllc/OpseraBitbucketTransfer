@@ -1,4 +1,11 @@
+  mmmm
+ m"  "m mmmm    mmm    mmm    m mm   mmm
+ #    # #" "#  #   "  #"  #   #"  " "   #
+ #    # #   #   """m  #""""   #     m"""#
+  #mm#  ##m#"  "mmm"  "#mm"   #     "mm"#
+
 # OpseraBitbucketTransfer
+Documentation is in progress. 
 Transfers a list of bitbucket repositories from a file and imports them into github
 
 How to use:
@@ -13,7 +20,10 @@ This will read the URLs from the file and process each repository accordingly.
 Authentication:
 Create a .env file
 
-
+BITBUCKET_USERNAME = BITBUCKET_USERNAME
+BITBUCKET_APP_PASSWORD = BITBUCKET_APP_PASSWORD generated from my settings tokens
+GITHUB_USERNAME = GITHUB_USERNAME
+GITHUB_TOKEN = GITHUB_TOKEN
 
 Dependencies
 
