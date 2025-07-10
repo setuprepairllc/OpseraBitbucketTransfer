@@ -4,7 +4,10 @@
  #    # #" "#  #   "  #"  #   #"  " "   #
  #    # #   #   """m  #""""   #     m"""#
   #mm#  ##m#"  "mmm"  "#mm"   #     "mm"#
+        #
 
+2025 Michael argo
+  
 # OpseraBitbucketTransfer
 Documentation is in progress. 
 Transfers a list of bitbucket repositories from a file and imports them into github
