@@ -1,8 +1,12 @@
 import os
-import subprocess
+import shutil
 import logging
 import requests
 from git import Repo, GitCommandError
+from dotenv import load_dotenv
+
+# Load environment variables from .env file
+load_dotenv()
 
 # Configure logging
 logging.basicConfig(
@@ -11,11 +15,11 @@ logging.basicConfig(
     format='%(asctime)s - %(levelname)s - %(message)s'
 )
 
-# Constants - replace with your actual tokens and usernames
-BITBUCKET_USERNAME = 'your_bitbucket_username'
-BITBUCKET_APP_PASSWORD = 'your_bitbucket_app_password'  # or OAuth token
-GITHUB_USERNAME = 'your_github_username'
-GITHUB_TOKEN = 'your_github_token'
+# Read credentials from environment variables
+BITBUCKET_USERNAME = os.getenv('BITBUCKET_USERNAME')
+BITBUCKET_APP_PASSWORD = os.getenv('BITBUCKET_APP_PASSWORD')
+GITHUB_USERNAME = os.getenv('GITHUB_USERNAME')
+GITHUB_TOKEN = os.getenv('GITHUB_TOKEN')
 GITHUB_API_URL = 'https://api.github.com'
 
 # Directory to clone repos temporarily
@@ -44,33 +48,60 @@ def create_github_repo(repo_name):
         return False
 
 def clone_bitbucket_repo(repo_url, repo_name):
-    """Clone the Bitbucket repository locally."""
+    """Clone the Bitbucket repository locally with authentication."""
     try:
         repo_path = os.path.join(CLONE_DIR, repo_name)
         if os.path.exists(repo_path):
             logging.info(f"Repository {repo_name} already cloned. Removing and recloning.")
-            subprocess.run(['rm', '-rf', repo_path], check=True)
-        logging.info(f"Cloning Bitbucket repo {repo_url}...")
-        Repo.clone_from(repo_url, repo_path)
+            shutil.rmtree(repo_path)
+
+        # Insert authentication into the repo URL
+        if repo_url.startswith('https://'):
+            auth_repo_url = repo_url.replace(
+                'https://',
+                f'https://{BITBUCKET_USERNAME}:{BITBUCKET_APP_PASSWORD}@'
+            )
+        else:
+            logging.error(f"Unsupported repo URL format: {repo_url}")
+            return None
+
+        logging.info(f"Cloning Bitbucket repo {repo_url} with authentication...")
+        Repo.clone_from(auth_repo_url, repo_path)
         logging.info(f"Cloned {repo_name} successfully.")
         return repo_path
     except GitCommandError as e:
         logging.error(f"Error cloning {repo_name}: {e}")
         return None
-    except subprocess.CalledProcessError as e:
-        logging.error(f"Error removing existing repo directory {repo_name}: {e}")
+    except Exception as e:
+        logging.error(f"Unexpected error cloning {repo_name}: {e}")
         return None
 
 def push_to_github(repo_path, repo_name):
     """Push the cloned repo to GitHub."""
     try:
         repo = Repo(repo_path)
-        origin = repo.create_remote('github', f'https://{GITHUB_USERNAME}:{GITHUB_TOKEN}@github.com/{GITHUB_USERNAME}/{repo_name}.git')
-        origin.push(refspec='refs/heads/master:refs/heads/master')
+
+        # Remove existing 'github' remote if exists
+        if 'github' in [remote.name for remote in repo.remotes]:
+            repo.delete_remote('github')
+
+        github_url = f'https://{GITHUB_USERNAME}:{GITHUB_TOKEN}@github.com/{GITHUB_USERNAME}/{repo_name}.git'
+        origin = repo.create_remote('github', github_url)
+
+        # Push all branches
+        for ref in repo.refs:
+            if ref.name.startswith('refs/heads/'):
+                branch = ref.name.replace('refs/heads/', '')
+                logging.info(f"Pushing branch {branch} to GitHub...")
+                origin.push(refspec=f'refs/heads/{branch}:refs/heads/{branch}')
+
         logging.info(f"Pushed {repo_name} to GitHub successfully.")
         return True
     except GitCommandError as e:
         logging.error(f"Error pushing {repo_name} to GitHub: {e}")
+        return False
+    except Exception as e:
+        logging.error(f"Unexpected error pushing {repo_name} to GitHub: {e}")
         return False
 
 def read_repos_from_file(file_path):
@@ -85,6 +116,10 @@ def read_repos_from_file(file_path):
         return []
 
 def main():
+    if not all([BITBUCKET_USERNAME, BITBUCKET_APP_PASSWORD, GITHUB_USERNAME, GITHUB_TOKEN]):
+        logging.error("Missing one or more authentication environment variables. Please check your .env file.")
+        return
+
     if not os.path.exists(CLONE_DIR):
         os.makedirs(CLONE_DIR)
 
