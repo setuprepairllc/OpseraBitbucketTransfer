@@ -15,3 +15,55 @@
 2025-07-09 21:50:50,518 - INFO - Starting migration for verademo-java
 2025-07-09 21:50:50,697 - ERROR - Failed to create GitHub repo 'verademo-java': {"message":"Resource not accessible by personal access token","documentation_url":"https://docs.github.com/rest/repos/repos#create-a-repository-for-the-authenticated-user","status":"403"}
 2025-07-09 21:50:50,698 - ERROR - Skipping verademo-java due to GitHub repo creation failure.
+2025-07-09 22:13:17,362 - INFO - Read 1 repositories from repos.txt
+2025-07-09 22:13:17,365 - INFO - Starting migration for verademo-java
+2025-07-09 22:13:17,536 - ERROR - Failed to create GitHub repo 'verademo-java': {"message":"Resource not accessible by personal access token","documentation_url":"https://docs.github.com/rest/repos/repos#create-a-repository-for-the-authenticated-user","status":"403"}
+2025-07-09 22:13:17,537 - ERROR - Skipping verademo-java due to GitHub repo creation failure.
+2025-07-09 22:20:56,661 - INFO - Read 1 repositories from repos.txt
+2025-07-09 22:20:56,664 - INFO - Starting migration for verademo-java
+2025-07-09 22:20:56,842 - ERROR - Failed to create GitHub repo 'verademo-java': {"message":"Resource not accessible by personal access token","documentation_url":"https://docs.github.com/rest/repos/repos#create-a-repository-for-the-authenticated-user","status":"403"}
+2025-07-09 22:20:56,842 - ERROR - Skipping verademo-java due to GitHub repo creation failure.
+2025-07-09 22:30:28,211 - INFO - Read 1 repositories from repos.txt
+2025-07-09 22:30:28,214 - INFO - Starting migration for verademo-java
+2025-07-09 22:30:28,400 - ERROR - Failed to create GitHub repo 'verademo-java': {"message":"Resource not accessible by personal access token","documentation_url":"https://docs.github.com/rest/repos/repos#create-a-repository-for-the-authenticated-user","status":"403"}
+2025-07-09 22:30:28,400 - ERROR - Skipping verademo-java due to GitHub repo creation failure.
+2025-07-09 22:35:22,040 - INFO - Read 1 repositories from repos.txt
+2025-07-09 22:35:22,043 - INFO - Starting migration for verademo-java
+2025-07-09 22:35:22,302 - WARNING - GitHub repo 'verademo-java' already exists.
+2025-07-09 22:35:22,304 - INFO - Cloning Bitbucket repo https://mikeargo@bitbucket.org/setuprepairllc/verademo-java.git with authentication...
+2025-07-09 22:35:22,318 - ERROR - Error cloning verademo-java: Cmd('git') failed due to: exit code(128)
+  cmdline: git clone -v -- https://*****:*****@bitbucket.org/setuprepairllc/verademo-java.git temp_repos/verademo-java
+  stderr: 'Cloning into 'temp_repos/verademo-java'...
+fatal: unable to access 'https://mikeargo@bitbucket.org/setuprepairllc/verademo-java.git/': URL rejected: Bad hostname
+'
+2025-07-09 22:35:22,318 - ERROR - Skipping verademo-java due to clone failure.
+2025-07-09 22:43:37,801 - INFO - Read 2 repositories from repos.txt
+2025-07-09 22:43:37,804 - INFO - Starting migration for verademo-java
+2025-07-09 22:43:39,020 - INFO - GitHub repo 'verademo-java-1' created successfully.
+2025-07-09 22:43:39,021 - INFO - Cloning Bitbucket repo https://mikeargo@bitbucket.org/setuprepairllc/verademo-java.git with authentication...
+2025-07-09 22:43:39,705 - INFO - Cloned verademo-java-1 successfully.
+2025-07-09 22:43:39,708 - INFO - Pushed verademo-java-1 to GitHub successfully.
+2025-07-09 22:43:39,708 - INFO - Migration completed for verademo-java-1
+2025-07-09 22:43:39,708 - INFO - Starting migration for simple-java-maven-app
+2025-07-09 22:43:41,050 - INFO - GitHub repo 'simple-java-maven-app-1' created successfully.
+2025-07-09 22:43:41,050 - INFO - Cloning Bitbucket repo https://mikeargo@bitbucket.org/setuprepairllc/simple-java-maven-app.git with authentication...
+2025-07-09 22:43:41,331 - ERROR - Error cloning simple-java-maven-app-1: Cmd('git') failed due to: exit code(128)
+  cmdline: git clone -v -- https://*****:*****@bitbucket.org/setuprepairllc/simple-java-maven-app.git temp_repos/simple-java-maven-app-1
+  stderr: 'Cloning into 'temp_repos/simple-java-maven-app-1'...
+remote: You may not have access to this repository or it no longer exists in this workspace. If you think this repository exists and you have access, make sure you are authenticated.
+fatal: Authentication failed for 'https://bitbucket.org/setuprepairllc/simple-java-maven-app.git/'
+'
+2025-07-09 22:43:41,331 - ERROR - Skipping simple-java-maven-app-1 due to clone failure.
+2025-07-09 22:53:31,768 - INFO - Read 2 repositories from repos.txt
+2025-07-09 22:53:31,771 - INFO - Starting migration for verademo-java
+2025-07-09 22:53:33,139 - INFO - GitHub repo 'verademo-java-2' created successfully.
+2025-07-09 22:53:33,139 - INFO - Cloning Bitbucket repo https://mikeargo@bitbucket.org/setuprepairllc/verademo-java.git with authentication...
+2025-07-09 22:53:33,755 - INFO - Cloned verademo-java-2 successfully.
+2025-07-09 22:53:33,758 - INFO - Pushed verademo-java-2 to GitHub successfully.
+2025-07-09 22:53:33,758 - INFO - Migration completed for verademo-java-2
+2025-07-09 22:53:33,758 - INFO - Starting migration for simple-java-maven-app
+2025-07-09 22:53:35,045 - INFO - GitHub repo 'simple-java-maven-app-2' created successfully.
+2025-07-09 22:53:35,046 - INFO - Cloning Bitbucket repo https://mikeargo@bitbucket.org/setuprepairllc/simple-java-maven-app.git with authentication...
+2025-07-09 22:53:36,107 - INFO - Cloned simple-java-maven-app-2 successfully.
+2025-07-09 22:53:36,110 - INFO - Pushed simple-java-maven-app-2 to GitHub successfully.
+2025-07-09 22:53:36,110 - INFO - Migration completed for simple-java-maven-app-2
