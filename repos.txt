@@ -1,2 +1,1 @@
-https://mikeargo@bitbucket.org/setuprepairllc/verademo-java.git
 https://mikeargo@bitbucket.org/setuprepairllc/simple-java-maven-app.git

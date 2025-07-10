@@ -93,3 +93,122 @@ fatal: Authentication failed for 'https://bitbucket.org/setuprepairllc/simple-ja
 2025-07-09 23:20:39,558 - INFO - Cloned simple-java-maven-app-4 successfully.
 2025-07-09 23:20:39,561 - INFO - Pushed simple-java-maven-app-4 to GitHub successfully.
 2025-07-09 23:20:39,561 - INFO - Migration completed for simple-java-maven-app-4
+2025-07-09 23:35:43,301 - INFO - Read 2 repositories from repos.txt
+2025-07-09 23:35:43,304 - INFO - Starting migration for verademo-java
+2025-07-09 23:35:45,540 - INFO - GitHub repo 'verademo-java-5' created successfully.
+2025-07-09 23:35:45,541 - INFO - Cloning Bitbucket repo https://mikeargo@bitbucket.org/setuprepairllc/verademo-java.git with authentication (all branches and tags)...
+2025-07-09 23:35:46,523 - INFO - Cloned verademo-java-5 successfully.
+2025-07-09 23:35:46,536 - ERROR - Error pushing verademo-java-5 to GitHub: Cmd('git') failed due to: exit code(1)
+  cmdline: git push --porcelain -- github --tags
+  stderr: 'error: src refspec --tags does not match any
+error: failed to push some refs to 'https://github.com/setuprepairllc/verademo-java-5.git''
+2025-07-09 23:35:46,536 - ERROR - Failed to push verademo-java-5 to GitHub.
+2025-07-09 23:35:46,536 - INFO - Starting migration for simple-java-maven-app
+2025-07-09 23:35:48,662 - INFO - GitHub repo 'simple-java-maven-app-5' created successfully.
+2025-07-09 23:35:48,663 - INFO - Cloning Bitbucket repo https://mikeargo@bitbucket.org/setuprepairllc/simple-java-maven-app.git with authentication (all branches and tags)...
+2025-07-09 23:35:50,292 - INFO - Cloned simple-java-maven-app-5 successfully.
+2025-07-09 23:35:50,305 - ERROR - Error pushing simple-java-maven-app-5 to GitHub: Cmd('git') failed due to: exit code(1)
+  cmdline: git push --porcelain -- github --tags
+  stderr: 'error: src refspec --tags does not match any
+error: failed to push some refs to 'https://github.com/setuprepairllc/simple-java-maven-app-5.git''
+2025-07-09 23:35:50,305 - ERROR - Failed to push simple-java-maven-app-5 to GitHub.
+2025-07-09 23:38:40,177 - INFO - Read 2 repositories from repos.txt
+2025-07-09 23:38:40,180 - INFO - Starting migration for verademo-java
+2025-07-09 23:38:42,561 - INFO - GitHub repo 'verademo-java-6' created successfully.
+2025-07-09 23:38:42,562 - INFO - Cloning Bitbucket repo https://mikeargo@bitbucket.org/setuprepairllc/verademo-java.git with authentication (all branches and tags)...
+2025-07-09 23:38:43,501 - INFO - Cloned verademo-java-6 successfully.
+2025-07-09 23:38:43,505 - INFO - Pushed verademo-java-6 to GitHub successfully.
+2025-07-09 23:38:43,505 - INFO - Migration completed for verademo-java-6
+2025-07-09 23:38:43,505 - INFO - Starting migration for simple-java-maven-app
+2025-07-09 23:38:45,835 - INFO - GitHub repo 'simple-java-maven-app-6' created successfully.
+2025-07-09 23:38:45,835 - INFO - Cloning Bitbucket repo https://mikeargo@bitbucket.org/setuprepairllc/simple-java-maven-app.git with authentication (all branches and tags)...
+2025-07-09 23:38:47,395 - INFO - Cloned simple-java-maven-app-6 successfully.
+2025-07-09 23:38:47,399 - INFO - Pushed simple-java-maven-app-6 to GitHub successfully.
+2025-07-09 23:38:47,399 - INFO - Migration completed for simple-java-maven-app-6
+2025-07-09 23:47:51,936 - INFO - Read 2 repositories from repos.txt
+2025-07-09 23:47:51,938 - INFO - Starting migration for verademo-java
+2025-07-09 23:47:53,054 - INFO - GitHub repo 'verademo-java-1' created successfully.
+2025-07-09 23:47:53,055 - INFO - Cloning Bitbucket repo https://mikeargo@bitbucket.org/setuprepairllc/verademo-java.git with authentication (all branches and tags)...
+2025-07-09 23:47:54,077 - INFO - Cloned verademo-java-1 successfully.
+2025-07-09 23:47:54,080 - INFO - Pushed verademo-java-1 to GitHub successfully.
+2025-07-09 23:47:54,080 - INFO - Migration completed for verademo-java-1
+2025-07-09 23:47:54,080 - INFO - Starting migration for simple-java-maven-app
+2025-07-09 23:47:55,244 - INFO - GitHub repo 'simple-java-maven-app-1' created successfully.
+2025-07-09 23:47:55,245 - INFO - Cloning Bitbucket repo https://mikeargo@bitbucket.org/setuprepairllc/simple-java-maven-app.git with authentication (all branches and tags)...
+2025-07-09 23:47:56,820 - INFO - Cloned simple-java-maven-app-1 successfully.
+2025-07-09 23:47:56,823 - INFO - Pushed simple-java-maven-app-1 to GitHub successfully.
+2025-07-09 23:47:56,823 - INFO - Migration completed for simple-java-maven-app-1
+2025-07-09 23:52:49,901 - INFO - Read 3 repositories from repos.txt
+2025-07-09 23:52:49,904 - INFO - Starting migration for verademo-java
+2025-07-09 23:52:51,381 - INFO - GitHub repo 'verademo-java-2' created successfully.
+2025-07-09 23:52:51,382 - INFO - Cloning Bitbucket repo https://mikeargo@bitbucket.org/setuprepairllc/verademo-java.git with authentication (all branches and tags)...
+2025-07-09 23:52:52,380 - INFO - Cloned verademo-java-2 successfully.
+2025-07-09 23:52:52,383 - INFO - Pushing all branches to GitHub for verademo-java-2...
+2025-07-09 23:52:53,148 - INFO - Pushed verademo-java-2 to GitHub successfully.
+2025-07-09 23:52:53,149 - INFO - Migration completed for verademo-java-2
+2025-07-09 23:52:53,149 - INFO - Starting migration for simple-java-maven-app
+2025-07-09 23:52:54,594 - INFO - GitHub repo 'simple-java-maven-app-2' created successfully.
+2025-07-09 23:52:54,595 - INFO - Cloning Bitbucket repo https://mikeargo@bitbucket.org/setuprepairllc/simple-java-maven-app.git with authentication (all branches and tags)...
+2025-07-09 23:52:56,132 - INFO - Cloned simple-java-maven-app-2 successfully.
+2025-07-09 23:52:56,135 - INFO - Pushing all branches to GitHub for simple-java-maven-app-2...
+2025-07-09 23:52:56,906 - INFO - Pushed simple-java-maven-app-2 to GitHub successfully.
+2025-07-09 23:52:56,906 - INFO - Migration completed for simple-java-maven-app-2
+2025-07-09 23:52:56,906 - INFO - Starting migration for verademo
+2025-07-09 23:52:58,275 - INFO - GitHub repo 'verademo-1' created successfully.
+2025-07-09 23:52:58,276 - INFO - Cloning Bitbucket repo https://mikeargo@bitbucket.org/setuprepairllc/verademo.git with authentication (all branches and tags)...
+2025-07-09 23:53:00,534 - INFO - Cloned verademo-1 successfully.
+2025-07-09 23:53:00,537 - INFO - Pushing all branches to GitHub for verademo-1...
+2025-07-09 23:53:01,324 - INFO - Pushed verademo-1 to GitHub successfully.
+2025-07-09 23:53:01,324 - INFO - Migration completed for verademo-1
+2025-07-09 23:56:16,305 - INFO - Read 3 repositories from repos.txt
+2025-07-09 23:56:16,309 - INFO - Starting migration for verademo-java
+2025-07-09 23:56:17,783 - INFO - GitHub repo 'verademo-java-3' created successfully.
+2025-07-09 23:56:17,783 - INFO - Cloning Bitbucket repo https://mikeargo@bitbucket.org/setuprepairllc/verademo-java.git with authentication (all branches and tags)...
+2025-07-09 23:56:18,763 - INFO - Cloned verademo-java-3 successfully.
+2025-07-09 23:56:18,766 - INFO - Pushing all branches to GitHub for verademo-java-3...
+2025-07-09 23:56:19,463 - INFO - Pushed verademo-java-3 to GitHub successfully.
+2025-07-09 23:56:19,463 - INFO - Migration completed for verademo-java-3
+2025-07-09 23:56:19,463 - INFO - Starting migration for simple-java-maven-app
+2025-07-09 23:56:21,106 - INFO - GitHub repo 'simple-java-maven-app-3' created successfully.
+2025-07-09 23:56:21,106 - INFO - Cloning Bitbucket repo https://mikeargo@bitbucket.org/setuprepairllc/simple-java-maven-app.git with authentication (all branches and tags)...
+2025-07-09 23:56:22,743 - INFO - Cloned simple-java-maven-app-3 successfully.
+2025-07-09 23:56:22,746 - INFO - Pushing all branches to GitHub for simple-java-maven-app-3...
+2025-07-09 23:56:23,546 - INFO - Pushed simple-java-maven-app-3 to GitHub successfully.
+2025-07-09 23:56:23,546 - INFO - Migration completed for simple-java-maven-app-3
+2025-07-09 23:56:23,546 - INFO - Starting migration for verademo
+2025-07-09 23:56:24,969 - INFO - GitHub repo 'verademo-2' created successfully.
+2025-07-09 23:56:24,970 - INFO - Cloning Bitbucket repo https://mikeargo@bitbucket.org/setuprepairllc/verademo.git with authentication (all branches and tags)...
+2025-07-09 23:56:25,937 - INFO - Cloned verademo-2 successfully.
+2025-07-09 23:56:25,940 - INFO - Pushing all branches to GitHub for verademo-2...
+2025-07-09 23:56:26,722 - INFO - Pushed verademo-2 to GitHub successfully.
+2025-07-09 23:56:26,722 - INFO - Migration completed for verademo-2
+2025-07-10 00:00:38,456 - INFO - Read 3 repositories from repos.txt
+2025-07-10 00:00:38,459 - INFO - Starting migration for verademo-java
+2025-07-10 00:00:40,272 - INFO - GitHub repo 'verademo-java-4' created successfully.
+2025-07-10 00:00:40,274 - INFO - Cloning Bitbucket repo https://mikeargo@bitbucket.org/setuprepairllc/verademo-java.git with authentication (all branches and tags)...
+2025-07-10 00:00:41,289 - INFO - Cloned verademo-java-4 successfully.
+2025-07-10 00:00:41,292 - INFO - Pushing all branches to GitHub for verademo-java-4...
+2025-07-10 00:00:42,008 - INFO - Pushed verademo-java-4 to GitHub successfully.
+2025-07-10 00:00:42,008 - INFO - Migration completed for verademo-java-4
+2025-07-10 00:00:42,008 - INFO - Starting migration for simple-java-maven-app
+2025-07-10 00:00:43,922 - INFO - GitHub repo 'simple-java-maven-app-4' created successfully.
+2025-07-10 00:00:43,922 - INFO - Cloning Bitbucket repo https://mikeargo@bitbucket.org/setuprepairllc/simple-java-maven-app.git with authentication (all branches and tags)...
+2025-07-10 00:00:45,570 - INFO - Cloned simple-java-maven-app-4 successfully.
+2025-07-10 00:00:45,573 - INFO - Pushing all branches to GitHub for simple-java-maven-app-4...
+2025-07-10 00:00:46,489 - INFO - Pushed simple-java-maven-app-4 to GitHub successfully.
+2025-07-10 00:00:46,489 - INFO - Migration completed for simple-java-maven-app-4
+2025-07-10 00:00:46,489 - INFO - Starting migration for verademo
+2025-07-10 00:00:48,090 - INFO - GitHub repo 'verademo-3' created successfully.
+2025-07-10 00:00:48,091 - INFO - Cloning Bitbucket repo https://mikeargo@bitbucket.org/setuprepairllc/verademo.git with authentication (all branches and tags)...
+2025-07-10 00:00:49,084 - INFO - Cloned verademo-3 successfully.
+2025-07-10 00:00:49,086 - INFO - Pushing all branches to GitHub for verademo-3...
+2025-07-10 00:00:49,917 - INFO - Pushed verademo-3 to GitHub successfully.
+2025-07-10 00:00:49,917 - INFO - Migration completed for verademo-3
+2025-07-10 00:02:15,896 - INFO - Read 1 repositories from repos.txt
+2025-07-10 00:02:15,899 - INFO - Starting migration for simple-java-maven-app
+2025-07-10 00:02:18,044 - INFO - GitHub repo 'simple-java-maven-app-5' created successfully.
+2025-07-10 00:02:18,044 - INFO - Cloning Bitbucket repo https://mikeargo@bitbucket.org/setuprepairllc/simple-java-maven-app.git with authentication (all branches and tags)...
+2025-07-10 00:02:19,682 - INFO - Cloned simple-java-maven-app-5 successfully.
+2025-07-10 00:02:19,685 - INFO - Pushing all branches to GitHub for simple-java-maven-app-5...
+2025-07-10 00:02:20,621 - INFO - Pushed simple-java-maven-app-5 to GitHub successfully.
+2025-07-10 00:02:20,621 - INFO - Migration completed for simple-java-maven-app-5
