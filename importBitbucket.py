@@ -4,6 +4,8 @@ import os
 import shutil
 import logging
 import requests
+import pyfiglet
+
 from git import Repo, GitCommandError
 from dotenv import load_dotenv
 from tqdm import tqdm
@@ -34,6 +36,9 @@ VERBOSE = True
 
 print(f"Loaded GitHub username: {GITHUB_USERNAME}")
 print(f"Loaded GitHub token (first 4 chars): {GITHUB_TOKEN[:4]}{'*' * (len(GITHUB_TOKEN)-4)}")
+banner = pyfiglet.figlet_format("OPSERA")
+print(banner)
+print("Bitbucket to GitHub Repo Migration Tool")
 
 def vprint(*args, **kwargs):
     """Print only if verbose is enabled."""
