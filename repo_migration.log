@@ -1,0 +1,17 @@
+2025-07-09 21:29:12,462 - ERROR - Missing one or more authentication environment variables. Please check your .env file.
+2025-07-09 21:31:03,338 - INFO - Read 1 repositories from repos.txt
+2025-07-09 21:31:03,348 - INFO - Starting migration for verademo-java
+2025-07-09 21:31:03,561 - ERROR - Failed to create GitHub repo 'verademo-java': {"message":"Resource not accessible by personal access token","documentation_url":"https://docs.github.com/rest/repos/repos#create-a-repository-for-the-authenticated-user","status":"403"}
+2025-07-09 21:31:03,562 - ERROR - Skipping verademo-java due to GitHub repo creation failure.
+2025-07-09 21:41:37,716 - INFO - Read 1 repositories from repos.txt
+2025-07-09 21:41:37,720 - INFO - Starting migration for verademo-java
+2025-07-09 21:41:37,898 - ERROR - Failed to create GitHub repo 'verademo-java': {"message":"Resource not accessible by personal access token","documentation_url":"https://docs.github.com/rest/repos/repos#create-a-repository-for-the-authenticated-user","status":"403"}
+2025-07-09 21:41:37,899 - ERROR - Skipping verademo-java due to GitHub repo creation failure.
+2025-07-09 21:48:29,955 - INFO - Read 1 repositories from repos.txt
+2025-07-09 21:48:29,958 - INFO - Starting migration for verademo-java
+2025-07-09 21:48:30,162 - ERROR - Failed to create GitHub repo 'verademo-java': {"message":"Resource not accessible by personal access token","documentation_url":"https://docs.github.com/rest/repos/repos#create-a-repository-for-the-authenticated-user","status":"403"}
+2025-07-09 21:48:30,162 - ERROR - Skipping verademo-java due to GitHub repo creation failure.
+2025-07-09 21:50:50,515 - INFO - Read 1 repositories from repos.txt
+2025-07-09 21:50:50,518 - INFO - Starting migration for verademo-java
+2025-07-09 21:50:50,697 - ERROR - Failed to create GitHub repo 'verademo-java': {"message":"Resource not accessible by personal access token","documentation_url":"https://docs.github.com/rest/repos/repos#create-a-repository-for-the-authenticated-user","status":"403"}
+2025-07-09 21:50:50,698 - ERROR - Skipping verademo-java due to GitHub repo creation failure.
